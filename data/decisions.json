@@ -1,0 +1,7 @@
+[
+  {
+    "timestamp": "2025-05-29 16:13:25.202442",
+    "raw_text": "We\u2019ve decided to sunset our legacy Android SDK due to repeated crash reports and rising maintenance costs. Starting next quarter, all clients will be required to use the new SDK which includes automatic session replay, error logging, and security patches.",
+    "summary": " The decision is to discontinue the outdated Android SDK because of recurring crashes and escalating maintenance costs. From the next quarter, it's mandatory for all users to switch to the new SDK, which offers features like automatic session replay, error logging, and enhanced security through regular updates."
+  }
+]
