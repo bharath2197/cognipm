@@ -17,7 +17,6 @@ from utils.memory import (
     load_roadmaps, save_roadmap, clear_roadmaps
 )
 
-# 🔁 Replacing Ollama with Incredible LLM
 def query_incredible(prompt, model="small-1", chunking=True, max_tokens=1500):
     """
     Auto-continues if model ends with [CONTINUE] or hits token limit.
@@ -34,7 +33,7 @@ def query_incredible(prompt, model="small-1", chunking=True, max_tokens=1500):
     ]
 
     full_output = ""
-    for _ in range(10):  # hard safety cap
+    for _ in range(10): 
         payload = {
             "model": model,
             "max_tokens": max_tokens,
@@ -46,9 +45,8 @@ def query_incredible(prompt, model="small-1", chunking=True, max_tokens=1500):
         full_output += content.strip().replace("[CONTINUE]", "").strip()
 
         if "[CONTINUE]" not in content and len(content) < (max_tokens * 4):
-            break  # likely complete
+            break 
 
-        # Continue prompt
         messages.append({"role": "assistant", "content": content})
         messages.append({"role": "user", "content": "Continue from where you left off. Do not repeat. End with [CONTINUE] if more remains."})
 
