@@ -7,9 +7,8 @@ from cognipm_dashboard import show_dashboard
 from dotenv import load_dotenv
 load_dotenv()
 
-# --------------------------
 # Sign Up UI
-# --------------------------
+
 def show_signup():
     st.subheader("Create a New Account")
 
@@ -40,9 +39,9 @@ def show_signup():
         else:
             st.error("🚫 Username already exists. Try a different one.")
 
-# --------------------------
+
 # Login UI
-# --------------------------
+
 def show_login():
     st.subheader("Login to PM Assistant")
     username = st.text_input("Username", key="login_username")
@@ -57,9 +56,9 @@ def show_login():
         else:
             st.error("❌ Invalid username or password.")
 
-# --------------------------
+
 # Main App Controller
-# --------------------------
+
 def main():
     st.title("AI-Powered Product Management Assistant")
 
