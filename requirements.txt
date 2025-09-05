@@ -1,3 +1,7 @@
 streamlit
-openai
+firebase-admin
+google-cloud-firestore
+httpx
 python-dotenv
+requests
+supabase
