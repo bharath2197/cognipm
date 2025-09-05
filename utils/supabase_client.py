@@ -1,6 +1,6 @@
 # utils/supabase_client.py
 import os
-from supabase_py import create_client, Client
+from supabase import create_client, Client
 from dotenv import load_dotenv
 
 # Load variables from .env in the project root
